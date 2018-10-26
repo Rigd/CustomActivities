@@ -10,7 +10,7 @@ import jwt
 
 API_KEY = os.environ.get("ZOOM_API_KEY")
 API_SECRET = os.environ.get("ZOOM_API_SECRET")
-API_USER_ID = os.environ.get("ZOOM_UID") #a URL-encoded e-mail would do
+API_USER_ID = os.environ.get("ZOOM_UID") #e-mail address of a Zoom user
 
 INSTANT_MEETING = 1
 SCHEDULED_MEETING = 2
@@ -73,7 +73,7 @@ MSG_FAILURE = [
 
 
 def slack_msg_failure(error_msg):
-    """fill the slack error message template with error message"""
+    """fill the slack failure message template with an error message"""
     msg = MSG_FAILURE
     msg[0]['text'] = error_msg
     return msg
