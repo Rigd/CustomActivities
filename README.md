@@ -1,2 +1,3 @@
 # CustomActivities
-A set of sample Custom activities
+A set of sample fulfillment modules for RigD custom activities
+
