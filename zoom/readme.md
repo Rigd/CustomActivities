@@ -1,6 +1,4 @@
- 
- 
- ####Deployment
+##### Deployment
 - Copy the source to your Codecommit repository
 - Use RigD's "create lambda function" activity to deploy to AWS
 - Set the following environment variables in the newly created lambda:
