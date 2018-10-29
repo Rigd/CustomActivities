@@ -1,3 +1,5 @@
+##### Purpose
+This is an AWS lambda module that allows custom activities to configure and start Zoom meetings.
 ##### Deployment
 - Clone the repository
 - Zip this directory (zoom)

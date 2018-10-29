@@ -1,5 +1,5 @@
 ##### Purpose
-This is the AWS lambda code for a RigD custom activity that sends text messages through Twilio.
+This is an AWS lambda module that allows custom activities to send text messages through Twilio.
 ##### Deployment
 - Clone the repository
 - Zip this directory (twilio)
