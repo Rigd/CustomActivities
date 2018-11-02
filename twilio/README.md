@@ -2,10 +2,10 @@
 This is an AWS lambda module that allows custom activities to send text messages through Twilio.
 ##### Deployment
 - Clone the repository
-- Zip this directory (twilio)
+- Zip this directory (twilio) with the provided utility:  
+    `sh utils/packlambda.sh twilio`
 - Use RigD's "create lambda function" activity to deploy the lambda to AWS 
     - use "Python 3.6" runtime
-    - make sure Python module "twilio" is available to the lambda
 - Set the following environment variables in the newly created lambda:
     - *TWILIO_ACCOUNT_SID* - available from the [General Settings](https://www.twilio.com/console/project/settings) section of your Twilio Dashboard. 
     - *TWILIO_AUTH_TOKEN* - available from the [General Settings](https://www.twilio.com/console/project/settings) section of your Twilio Dashboard. 

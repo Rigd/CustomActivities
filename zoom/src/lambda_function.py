@@ -82,7 +82,7 @@ def slack_msg_failure(error_msg):
     return msg
 
 
-def lambda_handler(event):
+def lambda_handler(event, context):
     """The main entry point of the lambda module.
     Gets called when your custom activity needs fulfillment"""
 

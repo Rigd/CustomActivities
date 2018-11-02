@@ -11,7 +11,7 @@ TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE_NUMBER = os.environ.get("TWILIO_PHONE_NUMBER")
 
 
-def lambda_handler(event):
+def lambda_handler(event, context):
     """The main entry point of the lambda module.
     Gets called when your custom activity needs fulfillment"""
 
