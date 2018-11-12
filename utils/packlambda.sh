@@ -11,5 +11,3 @@ pip install -t . -r requirements.txt --ignore-installed
 zip -r $1 .
 pushd
 mv $tmpdir/$1/$1.zip .
-#zip -r $1 $1
-#echo $tmpdir
