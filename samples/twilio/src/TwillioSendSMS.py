@@ -11,7 +11,7 @@ TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE_NUMBER = os.environ.get("TWILIO_PHONE_NUMBER")
 
 
-def lambda_handler(event, context):
+def handler(event, context):
     """The main entry point of the lambda module.
     Gets called when your custom activity needs fulfillment"""
 
@@ -52,7 +52,7 @@ def main():
         "Body": "Hi, λ test",
     }
     import pprint as pp
-    pp.pprint(lambda_handler(tevt))
+    pp.pprint(handler(tevt))
 
 
 if __name__ == "__main__":

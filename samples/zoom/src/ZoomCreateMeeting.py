@@ -82,7 +82,7 @@ def slack_msg_failure(error_msg):
     return msg
 
 
-def lambda_handler(event, context):
+def handler(event, context):
     """The main entry point of the lambda module.
     Gets called when your custom activity needs fulfillment"""
 
@@ -154,7 +154,7 @@ def main():
     tevt = {
         "join_before_host": True
     }
-    pp.pprint(lambda_handler(tevt))
+    pp.pprint(handler(tevt))
 
 
 if __name__ == "__main__":

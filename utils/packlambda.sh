@@ -1,11 +1,11 @@
 #!/bin/bash
 if [ $# -ne 1 ]
   then
-    echo "usage:  packlambda.sh <lambda_dir>"
+    echo "usage:  packlambda.sh <sample name>"
     exit 1
 fi
 tmpdir=`mktemp -d`
-cp -R $1 $tmpdir
+cp -R ./samples/$1 $tmpdir
 pushd $tmpdir/$1
 pip install -t . -r requirements.txt --ignore-installed
 zip -r $1 .
