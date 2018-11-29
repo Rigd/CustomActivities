@@ -94,5 +94,5 @@ def handler(event, context):
             return "Failed to Create Ticket"
 
 
-#event={'RequestType': 'IT help', 'ServiceDesk': 'SWAB1', 'summary': 'There is a Problem!', 'description': 'The ship has a hole in it.', 'PagerDuty Url': 'https://rigd-io.pagerduty.com/incidents/PF0WYS8'}
+#event={'RequestType': 'IT help', 'ServiceDesk': 'SWAB1', 'summary': 'There is a Problem!', 'description': 'The ship has a hole in it.', 'PagerDutyUrl': 'https://rigd-io.pagerduty.com/incidents/PF0WYS8'}
 #print(handler(event, ""))
