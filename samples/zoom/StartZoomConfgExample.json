@@ -1,0 +1,35 @@
+{
+    "ActivityName": "StartZoom",
+    "Help": {
+        "FriendlyName": "Start a Zoom Meeting",
+        "Description": "Starts a zoom meeting with an optional topic",
+        "Example": "start zoom meeting",
+        "WebLink": "https://github.com/Rigd/CustomActivities"
+    },
+    "Backend": {
+        "Type": "Lambda",
+        "ARN": "arn:aws:lambda:us-east-1:##########:function:ZoomMeeting:Dev",
+        "RigDToolName": "MyAWS"
+    },
+    "NLP": {
+        "Inputs": [
+            {
+                "Name": "topic",
+                "Required": false,
+                "Priority": "1",
+                "Type": "Any",
+                "Values": ["status meeting", "troubleshooting incident", "Launch planning"],
+                "Prompt": "Enter a topic for the meeting or skip."
+            }
+        ],
+        "Samples": [
+            "start a zoom meeting",
+            "start zoom share",
+            "launch zoom meeting",
+            "initiate a zoom conference",
+            "zoom start",
+            "start zoom",
+            "setup zoom meet"
+        ]
+    }
+}

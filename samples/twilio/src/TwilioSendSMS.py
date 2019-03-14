@@ -33,11 +33,11 @@ def handler(event, context):
     try:
         message = client.messages \
             .create(
-                body=event['Body'],
+                body=event['Msg'],
                 from_=TWILIO_PHONE_NUMBER,
                 to=event['To']
             )
-        slack_msg[0]['text'] = "Yor message has been " + message.status
+        slack_msg[0]['text'] = "Yor message has been " + str(message.status)
     except twilio.base.exceptions.TwilioRestException as ex:
         slack_msg[0]['text'] = ex.msg.replace("\"", "\'")
         slack_msg[0]['color'] = "danger"
@@ -48,11 +48,10 @@ def handler(event, context):
 def main():
     """For local testing. Will be ignored by AWS"""
     tevt = {
-        "To": "+15005550006",
-        "Body": "Hi, λ test",
+        "To": "+16175133844",
+        "Msg": "Hi, λ test",
     }
-    import pprint as pp
-    pp.pprint(handler(tevt))
+    print(handler(tevt, ""))
 
 
 if __name__ == "__main__":
